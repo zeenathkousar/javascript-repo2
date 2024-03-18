@@ -9,3 +9,4 @@ function x() {
 x();
 
 //it pritns value of i after one sec.
+//IF WE GIVE  3000 milli secs, it prints after 3secs
