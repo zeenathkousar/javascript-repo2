@@ -86,4 +86,55 @@ var b = function xyz() {
 //xyz() - but if i do like this, then we get err -  reference err- xyz is not defined
 // here  b will be created but xyz will not be created.
 
-//difference  between parameters and arguments
+//difference  between parameters and arguments.
+
+var b = function (param1, param2) {
+  //here param1 and param2 are known as parameters , as they present in function def.
+  //here param1 and param2 are local variables to this func , we cant access outside.
+  console.log("b called");
+};
+
+// the arguments which we give to a function while calling it . they are known as arguments.
+// b(arg1,arg2) ; here arg1 and arg2 are known as Parameters.
+
+//first class functions:
+// while calling a function, instead of values 1,2 like that we can pass a whole function as a argument., we can pass anonymou funtion and we can  receive a func as argumernt.it is perfect js .
+
+// var c = function (param1) {
+//   console.log(param1); //we get func def as output
+// };
+
+// c(function () {});
+
+//there is one more way to pass this function inside the function  like a named function as below.
+// var c = function (param1) {
+//   console.log(param1); //we get func def as output
+// };
+// function xyz() {}
+// c(xyz); //same as above way
+
+//we can even return a anonymous function from a function
+
+// var c = function (param1) {
+//   // console.log(param1);
+//   return function () {};
+// };
+// console.log(c()); //same as above way
+
+// similarly we can return named function
+
+var c = function (param1) {
+  // console.log(param1);
+  return function xyz() {};
+};
+console.log(c()); //same as above way
+
+//so this is nothing but first class fucntions
+//the ability to use functions as values is known as first class functions. and  can be passed as an arg to another funtionand can be returned  from a fucntion. this ability is known as first class fucntions.
+
+//first class functions and first class citizens are same.
+
+// es6 introduced arrow functions in 2015
+//this function stmt, expression  all can be created using arrow functions also
+
+//
