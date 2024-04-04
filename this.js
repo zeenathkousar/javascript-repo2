@@ -148,3 +148,39 @@ const obj2 = {
 //leran call vs bind vs apply
 
 // obj2.x(); - wt it will print,  the value of this will be obj2 , bcoz  the value of this in arrow functions will be the value where it is lexically enclosed..
+//whenever u see a arrow function,the value of this keyword will be where this arrow function is lexicaally enclosed .
+//enclosing lexical context is the function x.
+//so here the this keyword inside the arrow function will behave as if there is no arrow function y inside function x and we are console.log(this) directly innside the fucntion x.
+
+//it will behave as below- 
+const obj3 = {
+  a: 10,
+  x: function () {
+      console.log(this);
+  },
+};
+obj3.x();
+ //so this keyword in y arrow function is behaving exactly like how it would behave inside enclosing lexical context.
+ //so this will point to obj2
+ //arrow function doesnot have this binding
+ //arrow function wont provide their own this binding
+ //it retains the value of this , it retains the value of enclosing lexical context
+ //wt is lexical enclosing context
+ // the enclosing lexical context of function y is function x.
+ //this keyword will represent obj2 object
+
+ //lets see how this keyword bebhaves in DOM/html
+ //    <button id="clickMe" onclick="alert(this)">Click Me</button>
+ //lets add a button like this, and alerting this value
+ //check wt it prints on clicking button as a value of this.
+ //on clicking - we get object.html_buttonelement
+ //so this button element is itself the value of this
+ //so the value of this is the button html element
+ //this will be the reference to this to this button html element
+ //so if interviewer ask as wt is value of this in dom elements- u can say the value is reference to html element
+ //u can also do like alert(this.tagName) - it gives button
+ //this will represent button, u can perform and do many functions on it
+
+ //this keyword behaves diferently inside js classes ,constructors
+ 
+
