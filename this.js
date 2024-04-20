@@ -4,7 +4,7 @@
 //so this keyword in global space represent the global object
 
 //js not only runs on browser, it runs on smart watch or mobile or nodejs , smart bulbs, everywhere js runs, there we have js run time environment.
-//inside this brower, the global obj is different,
+//inside this browser, the global obj is different,
 //inside nodejs or any other place where js is runing , there global obj is different.
 
 //the value of this keyword will be global object.
@@ -34,7 +34,7 @@
 //so when we are accessing 'this' keyword inside function, then the value of this will depends on strict/non strict mode
 //value will be window if it is in strict mode and the value will be undefined if it is in non strict mode.
 
-//this is becaus of "this substitution" concept
+//this is because of "this substitution" concept.
 //so according to this substitution , if the value of this keyword is undefined or null, then this will be replaced with global object in only non strict mode.
 
 //so this is inside non strict mode - then this substitution happens
