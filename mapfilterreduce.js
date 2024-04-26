@@ -22,7 +22,7 @@
 // console.log(multiplyThree); //output - [3,7,11,15]
 
 // what is filter()?:
-// filter method will takes each element from array and  apply a condition on each element->  if consition returns true, the element gets pushed into output array. If condition returns false, element will not get pushed into conditional array.
+// filter method will takes each element from array and  apply a condition on each element->  if condition returns true, the element gets pushed into output array. If condition returns false, element will not get pushed into conditional array.
 // Filter the data which fulfills certain criteria.
 
 // const nums = [1, 2, 3, 4];
@@ -84,6 +84,7 @@
 //   return x * 2;
 // }
 
+
 // const output = arr.map(double);
 
 // it will run this function for each and every element of array and create a new arr out of it.
@@ -122,7 +123,7 @@
 //filter:
 
 // filter is basically used to filter the values inside an array
-//suppose we have an araray, and we want to filter some values from array which are odd inside it.
+//suppose we have an array, and we want to filter some values from array which are odd inside it.
 // eg: filtering values from array - which are greater than 4 ,
 //  or filtering all even numbers from an array.
 //or filtering all the numbers divisible by 5
